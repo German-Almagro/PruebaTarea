@@ -3,4 +3,5 @@
     <string name="zapman">ZAPMAN</string>
     <string name="iniciar_sesion">Iniciar Sesion</string>
     <string name="registrarse">Registrarse</string>
+    <string name="bienvenido_a_zapman">BIENVENIDO A ZAPMAN</string>
 </resources>
