@@ -4,4 +4,8 @@
     <string name="iniciar_sesion">Iniciar Sesion</string>
     <string name="registrarse">Registrarse</string>
     <string name="bienvenido_a_zapman">BIENVENIDO A ZAPMAN</string>
+    <string name="confirmar_contrase_a">Confirmar contraseña</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="terminar_registro">Registrarse</string>
 </resources>
