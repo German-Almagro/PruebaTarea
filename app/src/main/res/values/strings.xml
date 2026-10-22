@@ -14,4 +14,6 @@
     <string name="volver">Volver</string>
     <string name="escriba_su_nueva_contrase_a">Escriba su nueva contraseña</string>
     <string name="escriba_su_correro_electronico">Escriba su correro electronico</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

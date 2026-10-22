@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentPantallaPrincipal">
+
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.pruebatarea.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/fragmentPantallaPrincipal2"
+        android:name="com.example.pruebatarea.Fragments.FragmentPantallaPrincipal"
+        android:label="FragmentPantallaPrincipal"
+        tools:layout="@layout/fragment_pantalla_principal">
+
+        <action
+            android:id="@+id/action_fragmentPantallaPrincipal2_to_fragment_inicio_sesion4"
+            app:destination="@id/fragment_inicio_sesion4" />
+        <action
+            android:id="@+id/action_fragmentPantallaPrincipal2_to_fragmentRegistro"
+            app:destination="@id/fragmentRegistro" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_inicio_sesion4"
+        android:name="com.example.pruebatarea.Fragments.Fragment_inicio_sesion"
+        android:label="Fragment_inicio_sesion"
+        tools:layout="@layout/fragment_inicio_sesion">
+        <action
+            android:id="@+id/action_fragment_inicio_sesion4_to_fragment_recuperarcontra"
+            app:destination="@id/fragment_recuperarcontra" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRegistro"
+        android:name="com.example.pruebatarea.Fragments.FragmentRegistro"
+        android:label="FragmentRegistro"
+        tools:layout="@layout/fragment_registro"/>
+    <fragment
+        android:id="@+id/fragment_recuperarcontra"
+        android:name="com.example.pruebatarea.Fragments.Fragment_recuperarcontra"
+        android:label="Fragment_recuperarcontra"
+        tools:layout="@layout/fragment_recuperarcontra"/>
+
+</navigation>
