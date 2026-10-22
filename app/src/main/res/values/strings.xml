@@ -8,4 +8,10 @@
     <string name="contrase_a">Contraseña</string>
     <string name="nombre">Nombre</string>
     <string name="terminar_registro">Registrarse</string>
+    <string name="zapman_is">ZAPMAN</string>
+    <string name="recuperar_contrase_a">Recuperar Contraseña</string>
+    <string name="recuperacion_de_contrase_a">Recuperacion de contraseña</string>
+    <string name="volver">Volver</string>
+    <string name="escriba_su_nueva_contrase_a">Escriba su nueva contraseña</string>
+    <string name="escriba_su_correro_electronico">Escriba su correro electronico</string>
 </resources>
