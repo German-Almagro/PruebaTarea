@@ -49,6 +49,14 @@ class FragmentPantallaPrincipal : Fragment() {
 
             navController.navigate(R.id.action_fragmentPantallaPrincipal2_to_fragmentRegistro) }
 
-    }
+        binding.LinkError.setOnClickListener {
+            val navHostFragment = requireActivity().supportFragmentManager
+                .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
 
-}
+            val navController = navHostFragment.navController
+
+            navController.navigate(R.id.action_fragmentPantallaPrincipal2_to_fragmentPantallaError) }
+
+        }
+
+    }
