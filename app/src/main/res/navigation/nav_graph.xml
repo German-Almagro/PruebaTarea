@@ -41,12 +41,20 @@
         android:id="@+id/fragmentRegistro"
         android:name="com.example.pruebatarea.Fragments.FragmentRegistro"
         android:label="FragmentRegistro"
-        tools:layout="@layout/fragment_registro"/>
+        tools:layout="@layout/fragment_registro">
+        <action
+            android:id="@+id/action_fragmentRegistro_to_fragment_inicio_sesion4"
+            app:destination="@id/fragment_inicio_sesion4" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_recuperarcontra"
         android:name="com.example.pruebatarea.Fragments.Fragment_recuperarcontra"
         android:label="Fragment_recuperarcontra"
-        tools:layout="@layout/fragment_recuperarcontra"/>
+        tools:layout="@layout/fragment_recuperarcontra">
+        <action
+            android:id="@+id/action_fragment_recuperarcontra_to_fragment_inicio_sesion4"
+            app:destination="@id/fragment_inicio_sesion4" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentPantallaError"
         android:name="com.example.pruebatarea.Fragments.FragmentPantallaError"
