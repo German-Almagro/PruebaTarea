@@ -7,13 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.NavHostFragment
 import com.example.pruebatarea.R
-import com.example.pruebatarea.databinding.FragmentInicioSesionBinding
-import com.example.pruebatarea.databinding.FragmentRegistroBinding
+import com.example.pruebatarea.databinding.FragmentRecuperarcontraBinding
 
 
-class Fragment_inicio_sesion : Fragment() {
+class Fragmentrecuperarcontra : Fragment() {
 
-    private lateinit var binding: FragmentInicioSesionBinding
+    private lateinit var binding: FragmentRecuperarcontraBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,19 +23,19 @@ class Fragment_inicio_sesion : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-       binding = FragmentInicioSesionBinding.inflate(inflater)
+        binding = FragmentRecuperarcontraBinding.inflate(inflater)
         return binding.root
-    }
 
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.button3.setOnClickListener {
+        binding.button4.setOnClickListener {
             val navHostFragment = requireActivity().supportFragmentManager
                 .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
 
             val navController = navHostFragment.navController
-            navController.navigate(R.id.action_fragment_inicio_sesion4_to_fragment_recuperarcontra)
+            navController.navigate(R.id.action_fragment_recuperarcontra_to_fragment_inicio_sesion4)
         }
     }
 

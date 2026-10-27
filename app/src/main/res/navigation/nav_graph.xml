@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/fragment_inicio_sesion4"
-        android:name="com.example.pruebatarea.Fragments.Fragment_inicio_sesion"
+        android:name="com.example.pruebatarea.Fragments.Fragmentiniciosesion"
         android:label="Fragment_inicio_sesion"
         tools:layout="@layout/fragment_inicio_sesion">
         <action
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_recuperarcontra"
-        android:name="com.example.pruebatarea.Fragments.Fragment_recuperarcontra"
+        android:name="com.example.pruebatarea.Fragments.Fragmentrecuperarcontra"
         android:label="Fragment_recuperarcontra"
         tools:layout="@layout/fragment_recuperarcontra">
         <action
