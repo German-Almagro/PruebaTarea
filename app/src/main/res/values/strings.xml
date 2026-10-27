@@ -14,8 +14,8 @@
     <string name="volver">Volver</string>
     <string name="escriba_su_nueva_contrase_a">Escriba su nueva contraseña</string>
     <string name="escriba_su_correro_electronico">Escriba su correro electronico</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="error">ERROR</string>
     <string name="error_al_registrarse">Error al registrarse</string>
+    <string name="reinicie_la_aplicacion_error_inesperado">Reinicie la aplicacion. Error inesperado</string>
 </resources>
