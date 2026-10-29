@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_fragment_inicio_sesion4_to_fragment_recuperarcontra"
             app:destination="@id/fragment_recuperarcontra" />
+        <action
+            android:id="@+id/action_fragment_inicio_sesion4_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/fragmentRegistro"
@@ -60,5 +63,10 @@
         android:name="com.example.pruebatarea.Fragments.FragmentPantallaError"
         android:label="fragment_pantalla_error"
         tools:layout="@layout/fragment_pantalla_error" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.pruebatarea.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 
 </navigation>

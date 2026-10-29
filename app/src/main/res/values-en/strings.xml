@@ -18,4 +18,8 @@
     <string name="error">ERROR</string>
     <string name="error_al_registrarse">Error from register</string>
     <string name="reinicie_la_aplicacion_error_inesperado">Restart the app. Unexpected error</string>
+    <string name="error_invalid_credentials">Invalid credencials</string>
+    <string name="error_invalid_email">Wrong Email </string>
+    <string name="error_password_too_short">Password very short. At least 6 characters</string>
+    <string name="Home">Home</string>
 </resources>
