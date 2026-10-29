@@ -79,17 +79,6 @@ class Fragmentiniciosesion : Fragment() {
                     }
                 }
             }
-            binding.juan.doOnTextChanged { text, _, _, _ ->
-                viewModel.onEmailChanged(text.toString())
-            }
-
-            binding.nekix.doOnTextChanged { text, _, _, _ ->
-                viewModel.onPasswordChanged(text.toString())
-            }
-
-            binding.button2.setOnClickListener {
-                viewModel.onLoginClicked()
-            }
 
         binding.button3.setOnClickListener {
             val navHostFragment = requireActivity().supportFragmentManager
@@ -97,9 +86,18 @@ class Fragmentiniciosesion : Fragment() {
 
             val navController = navHostFragment.navController
             navController.navigate(R.id.action_fragment_inicio_sesion4_to_fragment_recuperarcontra)
+            }
+        }
+        binding.juan.doOnTextChanged { text, _, _, _ ->
+            viewModel.onEmailChanged(text.toString())
+        }
+
+        binding.nekix.doOnTextChanged { text, _, _, _ ->
+            viewModel.onPasswordChanged(text.toString())
+        }
+
+        binding.button2.setOnClickListener {
+            viewModel.onLoginClicked()
         }
     }
-
-
 }
-        }
