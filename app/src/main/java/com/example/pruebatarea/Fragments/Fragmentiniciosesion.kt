@@ -41,6 +41,14 @@ class Fragmentiniciosesion : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.button3.setOnClickListener {
+            val navHostFragment = requireActivity().supportFragmentManager
+                .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+
+            val navController = navHostFragment.navController
+            navController.navigate(R.id.action_fragment_inicio_sesion4_to_fragment_recuperarcontra)
+        }
+
         // Dentro de onCreate/onViewCreated:
         lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -80,13 +88,6 @@ class Fragmentiniciosesion : Fragment() {
                 }
             }
 
-        binding.button3.setOnClickListener {
-            val navHostFragment = requireActivity().supportFragmentManager
-                .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-
-            val navController = navHostFragment.navController
-            navController.navigate(R.id.action_fragment_inicio_sesion4_to_fragment_recuperarcontra)
-            }
         }
         binding.juan.doOnTextChanged { text, _, _, _ ->
             viewModel.onEmailChanged(text.toString())
