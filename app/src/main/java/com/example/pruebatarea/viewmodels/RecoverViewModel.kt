@@ -100,6 +100,6 @@ class RecoverViewModel : ViewModel() {
 
     private suspend fun simulateApiCall(email: String, password: String): Boolean {
         delay(1500) // Simula latencia de red
-        return email == "admin@test.com" && password == "123456"
+        return email == "nuevo@test.com" && password == "654321"
     }
 }

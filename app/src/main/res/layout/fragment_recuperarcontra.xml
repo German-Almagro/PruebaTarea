@@ -26,6 +26,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/corr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/escriba_su_correro_electronico" />
@@ -42,6 +43,7 @@
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contra"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
