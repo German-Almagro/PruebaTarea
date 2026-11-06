@@ -78,7 +78,7 @@ class Fragmentrecuperarcontra : Fragment() {
 
                                 val navController = navHostFragment.navController
 
-                                navController.navigate(R.id.action_fragment_inicio_sesion4_to_homeFragment)
+                                navController.navigate(R.id.action_fragment_recuperarcontra_to_fragment_inicio_sesion4)
                             }
 
                             is RecoverUiEvent.ShowError -> {
