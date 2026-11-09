@@ -30,9 +30,10 @@
         app:layout_constraintTop_toBottomOf="@+id/txtbienvenida">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nombre" />
+            android:hint="@string/escriba_su_correro_electronico" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -48,6 +49,7 @@
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contrase"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/contrase_a" />
@@ -64,6 +66,7 @@
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmarcontra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/confirmar_contrase_a" />
