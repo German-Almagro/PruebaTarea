@@ -21,7 +21,7 @@
     <string name="error_invalid_credentials">Invalid credencials</string>
     <string name="error_invalid_email">Wrong Email </string>
     <string name="error_password_too_short">Password very short. At least 6 characters</string>
-    <string name="Home">Home</string>
+    <string name="Home">HomeFragment</string>
     <string name="error_contraseña_diferente">The passwords are different</string>
 
 </resources>
