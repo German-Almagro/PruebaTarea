@@ -38,7 +38,6 @@ class RegistroViewModel : ViewModel() {
     fun onPasswordChanged(password: String) {
         _uiState.update { currentState ->
             val passwordError = validatePassword(password)
-            // Validamos también la confirmación por si ya tenía texto escrito
             val confirmError = validateConfirmPassword(password, currentState.confirmPassword)
             currentState.copy(
                 password = password,
@@ -106,7 +105,7 @@ class RegistroViewModel : ViewModel() {
     private fun validateConfirmPassword(password: String, confirmPassword: String): Int? {
         return when {
             confirmPassword.isEmpty() -> null
-            password != confirmPassword -> R.string.error_contraseña_diferente // (Asegúrate de tener este string o usa uno genérico)
+            password != confirmPassword -> R.string.error_contraseña_diferente
             else -> null
         }
     }
