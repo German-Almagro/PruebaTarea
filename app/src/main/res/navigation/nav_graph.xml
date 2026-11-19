@@ -67,6 +67,6 @@
         android:id="@+id/homeFragment"
         android:name="com.example.pruebatarea.Fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_list" />
 
 </navigation>
